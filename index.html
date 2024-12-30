@@ -6,100 +6,153 @@
     <title>Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-      .heading{
-        text-align: center;
-      }
-        .resumeborder{
-            border-style:1px solid black;
+        body {
+            /* font-family: Arial, sans-serif; */
+            /* line-height: 1.6; */
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+        .resumeborder {
+          border-style:1px solid black;
             width: 70%;
             padding: 20px;
             margin: 0 auto;
         }
-        .details{
-            font-size: 20px;    
-            font-weight: bold;
-        }
-        .subdetails{
-            font-style: italic;
-         }
-        .font{
-            font-size: 18px;
-        }
-        .right{
-            float: right;
-        }
-        .table {
-          display: table;
-          width: 100%; 
-          border-collapse: collapse;
-        }
-        .row {
-          display: table-row;
-        }
-        .cell {
-          display: table-cell;
-          padding: 5px;
+        .heading {
+            text-align: center;
+            font-size: 2rem;
         }
         .flex-container {
-          display: flex;
-          justify-content: center;
-          gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
         }
-        @media (max-width: 800px) {
-  .heading, .flex-container,.cell,.row,.table,.right,.font,.details,.subdetails,.resumeborder {
-    flex: 100%;
-  }
-}
-    </style>    
+        .flex-container div {
+            font-size: 1rem;
+            text-align: center;
+        }
+        .font {
+            font-size: 1rem;
+        }
+        .details {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .subdetails {
+            font-style: italic;
+            font-size: 1rem;
+        }
+        .table {
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .row {
+            display: table-row;
+        }
+        .cell {
+            display: table-cell;
+            padding: 5px;
+            vertical-align: top;
+        }
+        .cell.details {
+            font-weight: bold;
+        }
+        hr {
+            height: 2px;
+            border: none;
+            background-color: black;
+        }
+        .right {
+            text-align: right;
+        }
+        @media (max-width: 768px) {
+            .heading {
+                font-size: 1.8rem;
+            }
+            .flex-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .table {
+                display: block;
+            }
+            .row {
+                display: block;
+                margin-bottom: 10px;
+            }
+            .cell {
+                display: block;
+                width: 100%;
+            }
+            .right {
+                text-align: center;
+            }
+        }
+        @media (max-width: 480px) {
+            .heading {
+                font-size: 1.5rem;
+            }
+            .font {
+                font-size: 0.9rem;
+            }
+            .details {
+                font-size: 1rem;
+            }
+            .subdetails {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="resumeborder">
-    <h1 class="heading">KATLA LIKHITHA</h1>
-    <div class="flex-container">
-      <div><i class="fa fa-envelope"></i>likhithakatla1002@gmail.com</div>
-      <div><i class="fa fa-phone"></i>9381297504</div>
-      <div><i class="fa fa-envelope"></i>siriclla</div>
-      <div><i class="fa fa-linkedin-square"></i>linkedin.com/in/katla-likhitha-675b2022b</div>
-    </div>
-    <h2><i class="fa fa-address-card"></i>&nbsp;PROFILE</h2>
-    <hr style="height:2px;border-width:0;color:gray;background-color:black">
-    <p class="font">To secure a challenging Full Stack Developer position where I can apply my skills to create dynamic and userfriendly
-        web applications, contribute to a collaborative team, and continuously enhance my technical knowledge.
-    </p>
-    <h2><i class="fa fa-graduation-cap"></i>&nbsp;EDUCATION</h2>
-    <hr style="height:2px;border-width:0;color:gray;background-color:black">
-    <div class="table">
-        <div class="row">
-          <div class="cell details">Masters of Computer Applications(MCA)</div>
-          
-          <div class="cell details">2022-2024</div>
+        <h1 class="heading">KATLA LIKHITHA</h1>
+        <div class="flex-container">
+            <div><i class="fa fa-envelope"></i> likhithakatla1002@gmail.com</div>
+            <div><i class="fa fa-phone"></i> 9381297504</div>
+            <div><i class="fa fa-map-marker"></i> Siriclla</div>
+            <div><i class="fa fa-linkedin-square"></i> linkedin.com/in/katla-likhitha-675b2022b</div>
         </div>
-        <div class="row">
-          <div class="cell subdetails font">A V PG College, Hyderabad</div>
-          <div class="cell subdetails font">82%</div>
+        <h2><i class="fa fa-address-card"></i> PROFILE</h2>
+        <hr>
+        <p class="font">To secure a challenging Full Stack Developer position where I can apply my skills to create dynamic and user-friendly web applications, contribute to a collaborative team, and continuously enhance my technical knowledge.</p>
+        <h2><i class="fa fa-graduation-cap"></i> EDUCATION</h2>
+        <hr>
+        <div class="table">
+            <div class="row">
+                <div class="cell details">Masters of Computer Applications (MCA)</div>
+                <div class="cell details">2022-2024</div>
+            </div>
+            <div class="row">
+                <div class="cell subdetails font">A V PG College, Hyderabad</div>
+                <div class="cell subdetails font">82%</div>
+            </div>
+            <div class="row">
+                <div class="cell details">Bachelor's of Science (MSC)</div>
+                <div class="cell details">2019-2022</div>
+            </div>
+            <div class="row">
+                <div class="cell subdetails font">Mahatma Jyothiba Phule Residential Degree College, Wargal</div>
+                <div class="cell subdetails font">92%</div>
+            </div>
         </div>
-        <div class="row">
-          <div class="cell details">Bachelor's of Science(MSCs)</div>
-          <div class="cell details">2019-2022</div>
+        <h2><i class="fa fa-briefcase"></i> SKILLS</h2>
+        <hr>
+        <div class="table">
+            <div class="row">
+                <div class="cell font">Languages: Python, HTML, CSS, JavaScript</div>
+                <div class="cell font">Frameworks: Bootstrap</div>
+            </div>
+            <div class="row">
+                <div class="cell font">Database: MySQL</div>
+                <div class="cell font">Tools: VSCode</div>
+            </div>
         </div>
-        <div class="row">
-          <div class="cell subdetails font">Mahatma Jyothiba Phule Residential Degree College, Wargal</div>
-          <div class="cell subdetails font">92%</div>
-        </div>
-    </div>
-    <h2><i class="fa fa-briefcase"></i>&nbsp;SKILLS</h2>
-    <hr style="height:2px;border-width:0;color:gray;background-color:black">
-    <div class="table">
-        <div class="row">
-          <div class="cell font">Languages : Python, HTML, CSS, JavaScript</div>
-          <div class="cell font">Frameworks : Bootstrap</div>
-        </div>
-        <div class="row">
-          <div class="cell font">Database : MySQL</div>
-          <div class="cell font">Tools : VSCode</div>
-        </div>
-    </div>
-    <h2><i class="fa fa-folder-open"></i>&nbsp;PROJECTS</h2>
+        <h2><i class="fa fa-folder-open"></i>&nbsp;PROJECTS</h2>
     <hr style="height:2px;border-width:0;color:gray;background-color:black">
     <p class="details">WORKPATH (Employment for Semi-Literates)</p>
     <p class="subdetails font">Frontend Web DevelopmentIntern by IBM COMPANY</p>
@@ -130,6 +183,7 @@
         employed.
     </p>
     <p class="right details">Katla Likhitha</p>
-</div>          
+
+    </div>
 </body>
 </html>
